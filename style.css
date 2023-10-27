@@ -1,0 +1,46 @@
+body {
+  min-width: 400px;
+}
+li {
+  color: red;
+}
+#matches {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+.match {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+.type-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+#type {
+  color: black;
+  text-align: center;
+}
+.teams {
+  color: blueviolet;
+}
+#scores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: brown;
+}
+.team-name {
+  color: darkblue;
+}
+.match-status {
+  color: red;
+}
+#match-status-title {
+  color: black;
+}

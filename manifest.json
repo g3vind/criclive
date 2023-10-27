@@ -1,0 +1,11 @@
+{
+  "name": "CricLive 🏏",
+  "version": "1.0.0",
+  "description": "Live Status of Cricket Matches",
+  "manifest_version": 3,
+  "author": "Govind Kumar",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Chrome XtensioN"
+  }
+}
