@@ -25,8 +25,8 @@ async function getMatchData() {
 
           const matchStatus =
             teamAScore === "not batted yet" && teamBScore === "not batted yet"
-              ? "Match not started"
-              : "Match going on";
+              ? "Match Not Started Yet"
+              : "Match Going On";
 
           return `
                 <li class="match">
