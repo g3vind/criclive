@@ -1,4 +1,17 @@
+// script.js
+
 async function getMatchData() {
+  // Check if the user is offline
+  if (!navigator.onLine) {
+    document.getElementById("matches").innerHTML = `
+      <div id="offline-message">
+        
+        <img class="offline-img" src="offline.jpg" alt="Offline Image">
+      </div>
+    `;
+    return;
+  }
+
   return await fetch(
     "https://api.cricapi.com/v1/cricScore?apikey=e42574c5-3d8c-42c5-9e09-7c5f527a8fc5"
   )
@@ -40,13 +53,11 @@ async function getMatchData() {
                   </div>
                   <div id="scores">
                     <div class="team-info">
-                    
                       <p class="team-name">  <img src="${match.t1img}" alt="${
             match.t1
           }" class="team-flag"> ${match.t1.toUpperCase()} </p><b>${teamAScore}</b>
                     </div>
                     <div class="team-info">
-                      
                       <p class="team-name"><img src="${match.t2img}" alt="${
             match.t2
           }" class="team-flag"> ${match.t2.toUpperCase()} </p><b>${teamBScore}</b>
