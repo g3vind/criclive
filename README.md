@@ -1,4 +1,4 @@
-# CricLive - Live Cricket Match Status Chrome Extension
+# CricLive 🏏- Live Cricket Match Status Chrome Extension
 
 CricLive is a Chrome extension that displays live cricket match status beautifully.
 
