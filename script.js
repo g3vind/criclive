@@ -1,6 +1,6 @@
 async function getMatchData() {
   return await fetch(
-    "https://api.cricapi.com/v1/cricScore?apikey=0386a5e5-4a9d-4fc8-adec-c73d0f4afd67"
+    "https://api.cricapi.com/v1/cricScore?apikey=e42574c5-3d8c-42c5-9e09-7c5f527a8fc5"
   )
     .then((data) => data.json())
     .then((data) => {
@@ -39,8 +39,18 @@ async function getMatchData() {
                     <strong id="type">Match Type : </strong> ${match.matchType.toUpperCase()}<br>
                   </div>
                   <div id="scores">
-                    <p class="team-name">${match.t1.toUpperCase()} </p><b>${teamAScore}</b><br>
-                    <p class="team-name">${match.t2.toUpperCase()} </p><b>${teamBScore}</b><br>
+                    <div class="team-info">
+                    
+                      <p class="team-name">  <img src="${match.t1img}" alt="${
+            match.t1
+          }" class="team-flag"> ${match.t1.toUpperCase()} </p><b>${teamAScore}</b>
+                    </div>
+                    <div class="team-info">
+                      
+                      <p class="team-name"><img src="${match.t2img}" alt="${
+            match.t2
+          }" class="team-flag"> ${match.t2.toUpperCase()} </p><b>${teamBScore}</b>
+                    </div>
                   </div>
                 </li>`;
         });

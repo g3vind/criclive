@@ -1,6 +1,9 @@
 body {
   min-width: 400px;
+  box-sizing: border-box;
+  background-color: aliceblue;
 }
+
 li {
   color: red;
 }
@@ -8,6 +11,7 @@ li {
   text-align: center;
   list-style: none;
   padding: 0;
+  box-shadow: 10;
 }
 .match {
   border: 1px solid #ccc;
@@ -33,7 +37,7 @@ li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: brown;
+  color: rgb(132, 13, 13);
 }
 .team-name {
   color: darkblue;
@@ -43,4 +47,8 @@ li {
 }
 #match-status-title {
   color: black;
+}
+.team-flag {
+  height: 16px;
+  width: 16px;
 }
