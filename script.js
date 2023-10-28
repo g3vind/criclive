@@ -1,12 +1,10 @@
-// script.js
-
 async function getMatchData() {
   // Check if the user is offline
   if (!navigator.onLine) {
     document.getElementById("matches").innerHTML = `
       <div id="offline-message">
         
-        <img class="offline-img" src="offline.jpg" alt="Offline Image">
+        <img class="offline-img" src="images/offline.jpg" alt="Offline Image">
       </div>
     `;
     return;

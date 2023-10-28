@@ -5,9 +5,9 @@
   "manifest_version": 3,
   "author": "Govind Kumar",
   "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "96": "icon96.png"
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "96": "images/icon96.png"
   },
 
   "action": {
