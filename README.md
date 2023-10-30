@@ -39,6 +39,3 @@ This project is licensed under the MIT License - see the [MIT](LICENSE) file for
 
 - Special thanks to the CricDataOrgAPI team for providing cricket match data.
 
----
-
-Feel free to customize this README to include additional information about your project, such as installation instructions, usage examples, and any other relevant details.
